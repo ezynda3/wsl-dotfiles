@@ -56,12 +56,15 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# Docker
 export DOCKER_HOST=tcp://0.0.0.0:2375
 
+# Go
 export GOPATH=$HOME/Workspace/Golang
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
