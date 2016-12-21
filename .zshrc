@@ -64,7 +64,10 @@ export DOCKER_HOST=tcp://0.0.0.0:2375
 # Go
 export GOPATH=$HOME/Workspace/Golang
 export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# Yarn
+export PATH="$PATH:`yarn global bin`"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
