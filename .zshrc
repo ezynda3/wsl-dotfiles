@@ -71,6 +71,14 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # Yarn
 export PATH="$PATH:`yarn global bin`"
 
+# Handy function for getting Windows pwd
+function wpwd() {
+    echo ${$(pwd -P)/\/mnt/}
+}
+
+# NPM
+export PATH=~/.npm-global/bin:$PATH
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
