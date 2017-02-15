@@ -68,6 +68,20 @@ export GOPATH=$HOME/Workspace/Golang
 export GOROOT=/usr/lib/go-1.7
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# Handy function for getting Windows pwd
+function wpwd() {
+    echo ${$(pwd -P)/\/mnt/}
+}
+
+# NPM
+export PATH=$HOME/.npm-global/bin:$PATH
+
+# Yarn
+export PATH="$PATH:`yarn global bin`"
+
+# Composer
+export PATH=$HOME/.composer/vendor/bin:$PATH
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
