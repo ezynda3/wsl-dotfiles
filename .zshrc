@@ -65,7 +65,7 @@ export DOCKER_HOST=tcp://0.0.0.0:2375
 
 # Go
 export GOPATH=$HOME/Workspace/Golang
-export GOROOT=/usr/lib/go-1.7
+export GOROOT=/usr/lib/go-1.8
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Handy function for getting Windows pwd
@@ -105,3 +105,4 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+. $HOME/.aliases
