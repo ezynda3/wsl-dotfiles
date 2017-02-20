@@ -65,7 +65,7 @@ export DOCKER_HOST=tcp://0.0.0.0:2375
 
 # Go
 export GOPATH=$HOME/Workspace/Golang
-export GOROOT=/usr/lib/go-1.7
+export GOROOT=/usr/lib/go-1.8
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Handy function for getting Windows pwd
@@ -77,7 +77,7 @@ function wpwd() {
 export PATH=$HOME/.npm-global/bin:$PATH
 
 # Composer
-export PATH=$HOME/.composer/vendor/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:vendor/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
