@@ -76,9 +76,6 @@ function wpwd() {
 # NPM
 export PATH=$HOME/.npm-global/bin:$PATH
 
-# Yarn
-export PATH="$PATH:`yarn global bin`"
-
 # Composer
 export PATH=$HOME/.composer/vendor/bin:$PATH
 
@@ -105,4 +102,4 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-. $HOME/.aliases
+. ~/.aliases
