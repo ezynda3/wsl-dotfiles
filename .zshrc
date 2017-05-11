@@ -102,4 +102,7 @@ export PATH=$HOME/.composer/vendor/bin:vendor/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+sudo /bin/mount --bind /mnt/c /c
+
 . ~/.aliases
