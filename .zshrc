@@ -77,7 +77,7 @@ function wpwd() {
 export PATH=$HOME/.npm-global/bin:$PATH
 
 # Composer
-export PATH=$HOME/.composer/vendor/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:vendor/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -104,4 +104,7 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+sudo /bin/mount --bind /mnt/c /c
+
 . ~/.aliases
