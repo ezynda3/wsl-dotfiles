@@ -63,21 +63,14 @@ sa() { eval "$(ssh-agent -s)" ssh-add  }
 # Docker
 export DOCKER_HOST=tcp://0.0.0.0:2375
 
-# Go
-export GOPATH=$HOME/Workspace/Golang
-export GOROOT=/usr/lib/go-1.8
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
 # Handy function for getting Windows pwd
 function wpwd() {
     echo ${$(pwd -P)/\/mnt/}
 }
 
-# NPM
-export PATH=$HOME/.npm-global/bin:$PATH
 
 # Composer
-export PATH=$HOME/.composer/vendor/bin:vendor/bin:$PATH
+export PATH=$PATH:$HOME/.composer/vendor/bin:vendor/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
