@@ -7,7 +7,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+
+export WKSP=/c/Users/Ed\ Zynda/Workspace
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -61,23 +63,42 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 sa() { eval "$(ssh-agent -s)" ssh-add  }
 
 # Docker
-export DOCKER_HOST=tcp://0.0.0.0:2375
+# export DOCKER_HOST=tcp://0.0.0.0:2375
 
 # Go
-export GOPATH=$HOME/Workspace/Golang
-export GOROOT=/usr/lib/go-1.8
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GOPATH=$HOME/Workspace/.go
+#export GOROOT=/usr/local/go
+export PATH=$PATH:$GOPATH/bin
+
+# Dart 
+export PATH=$PATH:/usr/lib/dart/bin
+export PATH=$PATH:$HOME/.pub-cache/bin
 
 # Handy function for getting Windows pwd
 function wpwd() {
     echo ${$(pwd -P)/\/mnt/}
 }
 
+function cd() {
+    builtin cd "$@" && [[ -f .aliases  ]] && . ./.aliases
+    return 0
+}
+
+# Yarn
+export PATH=$HOME/.yarn/bin:$PATH
+
 # NPM
 export PATH=$HOME/.npm-global/bin:$PATH
 
 # Composer
 export PATH=$HOME/.composer/vendor/bin:vendor/bin:$PATH
+
+# Linux Brew
+export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+export PATH=/home/linuxbrew/.linuxbrew/sbin:$PATH
+
+# N
+export PATH=$HOME/n/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -105,6 +126,12 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-sudo /bin/mount --bind /mnt/c /c
-
 . ~/.aliases
+. /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#. ~/.ssh/environment > /dev/null
+
+# X Server
+# export LIBGL_ALWAYS_INDIRECT=1
+# export DISPLAY=0:0
+# sudo /etc/init.d/dbus start &> /dev/null
+#umask 002

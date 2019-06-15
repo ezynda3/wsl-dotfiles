@@ -1,1 +1,6 @@
-alias wksp='cd /c/Users/space_cowboy/Workspace'
+#!/usr/bin/zsh
+#alias wksp='cd /c/Users/Ed\ Zynda/Workspace'
+alias wksp='cd $HOME/Workspace'
+alias yarn='yarn --ignore-engines'
+alias code='code-insiders'
+#alias pub="docker run --rm -it -v '$(pwd):/app' -v '$HOME/.pub-cache:/$HOME/.pub-cache' -w /app -e PATH='$PATH:$HOME/.pub-cache/bin' -e PUB_CACHE='$HOME/.pub-cache' google/dart pub $@"
