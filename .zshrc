@@ -65,6 +65,7 @@ sa() { eval "$(ssh-agent -s)" ssh-add  }
 # Docker
 # export DOCKER_HOST=tcp://0.0.0.0:2375
 
+<<<<<<< HEAD
 # Go
 export GOPATH=$HOME/Workspace/.go
 #export GOROOT=/usr/local/go
@@ -74,11 +75,14 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/lib/dart/bin
 export PATH=$PATH:$HOME/.pub-cache/bin
 
+=======
+>>>>>>> 80c46ae8187c8b5fd2ac665eab24e9d057cb6476
 # Handy function for getting Windows pwd
 function wpwd() {
     echo ${$(pwd -P)/\/mnt/}
 }
 
+<<<<<<< HEAD
 function cd() {
     builtin cd "$@" && [[ -f .aliases  ]] && . ./.aliases
     return 0
@@ -89,9 +93,11 @@ export PATH=$HOME/.yarn/bin:$PATH
 
 # NPM
 export PATH=$HOME/.npm-global/bin:$PATH
+=======
+>>>>>>> 80c46ae8187c8b5fd2ac665eab24e9d057cb6476
 
 # Composer
-export PATH=$HOME/.composer/vendor/bin:vendor/bin:$PATH
+export PATH=$PATH:$HOME/.composer/vendor/bin:vendor/bin
 
 # Linux Brew
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
